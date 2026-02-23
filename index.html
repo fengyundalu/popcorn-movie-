@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>爆米花影视 - 智能影视库</title>
+    <link rel="manifest" href="manifest.json">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, sans-serif; background: #0a0a0a; color: #fff; }
+        .glass { background: rgba(20,20,20,0.8); backdrop-filter: blur(20px); border: 1px solid rgba(255,255,255,0.1); }
+        .gradient-text { background: linear-gradient(135deg, #fff, #a0a0a0); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body>
+    <nav class="fixed top-0 w-full glass z-50 px-4 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-br from-red-500 to-yellow-500 rounded-xl flex items-center justify-center text-2xl">🍿</div>
+                <span class="font-bold text-xl">爆米花影视</span>
+            </div>
+        </div>
+    </nav>
+    <main class="max-w-7xl mx-auto px-4 pt-32 pb-20 text-center">
+        <h1 class="text-5xl font-extrabold mb-6 gradient-text">你的智能影视库</h1>
+        <p class="text-xl text-gray-400 mb-12">支持阿里云盘、百度网盘、WebDAV聚合</p>
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div class="glass rounded-2xl p-8">
+                <div class="text-4xl mb-4">🤖</div>
+                <h3 class="text-xl font-bold">Android</h3>
+                <a href="#" class="block mt-4 py-3 bg-green-600 rounded-xl">下载APK</a>
+            </div>
+            <div class="glass rounded-2xl p-8">
+                <div class="text-4xl mb-4">🍎</div>
+                <h3 class="text-xl font-bold">iOS</h3>
+                <a href="#" class="block mt-4 py-3 bg-blue-600 rounded-xl">安装指南</a>
+            </div>
+            <div class="glass rounded-2xl p-8">
+                <div class="text-4xl mb-4">🌐</div>
+                <h3 class="text-xl font-bold">PWA</h3>
+                <a href="app.html" class="block mt-4 py-3 bg-gradient-to-r from-red-500 to-yellow-500 rounded-xl">直接打开</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
