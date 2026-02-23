@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>爆米花影视</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { height: 100%; background: #0a0a0a; color: #fff; font-family: sans-serif; overflow: hidden; }
+        #app { height: 100%; overflow-y: auto; padding-bottom: 80px; }
+        .nav { padding: 12px 16px; display: flex; justify-content: space-between; background: #1a1a1a; position: sticky; top: 0; }
+        .logo { display: flex; align-items: center; gap: 8px; font-weight: bold; }
+        .logo-icon { width: 36px; height: 36px; background: linear-gradient(135deg, #ff6b6b, #feca57); border-radius: 10px; display: flex; align-items: center; justify-content: center; }
+        .movies { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding: 16px; }
+        .movie { aspect-ratio: 2/3; background: linear-gradient(135deg, #333, #444); border-radius: 12px; position: relative; }
+        .movie-info { position: absolute; bottom: 0; left: 0; right: 0; padding: 8px; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); font-size: 12px; }
+        .tabbar { position: fixed; bottom: 0; left: 0; right: 0; height: 64px; background: #1a1a1a; border-top: 1px solid #333; display: flex; justify-content: space-around; align-items: center; }
+        .tab { flex: 1; text-align: center; color: #666; font-size: 12px; }
+        .tab.active { color: #ff6b6b; }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <div class="nav">
+            <div class="logo">
+                <div class="logo-icon">🍿</div>
+                <span>爆米花</span>
+            </div>
+        </div>
+        <div class="movies">
+            <div class="movie"><div class="movie-info">星际穿越<br>⭐9.4</div></div>
+            <div class="movie"><div class="movie-info">沙丘2<br>⭐8.3</div></div>
+            <div class="movie"><div class="movie-info">奥本海默<br>⭐8.8</div></div>
+            <div class="movie"><div class="movie-info">流浪地球2<br>⭐8.4</div></div>
+            <div class="movie"><div class="movie-info">赛博朋克<br>⭐9.0</div></div>
+            <div class="movie"><div class="movie-info">黑镜<br>⭐7.8</div></div>
+        </div>
+    </div>
+    <div class="tabbar">
+        <div class="tab active">🏠首页</div>
+        <div class="tab">🔍发现</div>
+        <div class="tab">👥片友</div>
+        <div class="tab">👤我的</div>
+    </div>
+</body>
+</html>
